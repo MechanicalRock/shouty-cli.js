@@ -1,4 +1,1 @@
 --recursive
---require ./node_modules/pact-js-mocha/src/index.js
---require ./test/pactHelper.js
---delay

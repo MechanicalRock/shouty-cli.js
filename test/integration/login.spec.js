@@ -13,7 +13,7 @@ describe('login', ()=> {
   const login=`${shoutyExec} login`
 
   before(() => {
-    command(`${configure} --endpoint http://localhost:8080`)
+    command(`${configure} http://localhost:8080`)
   });
 
   it("should require the name and (x,y) location", () => {
@@ -22,6 +22,6 @@ describe('login', ()=> {
     expect(() => {command(`${login} foo 0`)}).to.throw('missing required argument `y\'')
   });
 
-  
+
 
 });
