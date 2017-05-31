@@ -1,0 +1,42 @@
+{
+  "name": "shouty-cli",
+  "version": "1.0.0",
+  "description": "Command Line (CLI) client for the Shouty App",
+  "main": "bin/index.js",
+  "scripts": {
+    "sample": "./src/sample.js",
+    "test": "mocha",
+    "test:integration": "npm install -g && mocha",
+    "test:unit": "mocha --opts test/mocha-unit.opts test/unit",
+    "test:watch": "mocha --watch --opts test/mocha-unit.opts test/unit"
+  },
+  "bin": {
+    "shouty": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MagenTys/shouty-cli.js.git"
+  },
+  "author": "Tim Myerscough",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MagenTys/shouty-cli.js/issues"
+  },
+  "homepage": "https://github.com/MagenTys/shouty-cli.js#readme",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "chai-fs": "^1.0.0",
+    "fs-extra": "^3.0.1",
+    "mocha": "^3.4.2",
+    "pact": "^2.5.0",
+    "pact-js-mocha": "^1.0.2-alpha",
+    "sinon": "^2.3.2"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "escape-json-node": "^1.0.8",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "superagent": "^3.5.2"
+  }
+}
