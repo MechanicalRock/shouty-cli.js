@@ -8,7 +8,9 @@
     "test": "mocha",
     "test:integration": "npm install -g && mocha",
     "test:unit": "mocha --opts test/mocha-unit.opts test/unit",
-    "test:watch": "mocha --watch --opts test/mocha-unit.opts test/unit"
+    "test:watch": "mocha --watch --opts test/mocha-unit.opts test/unit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "shouty": "bin/index.js"
@@ -35,8 +37,10 @@
   "dependencies": {
     "commander": "^2.9.0",
     "escape-json-node": "^1.0.8",
-    "request": "^2.81.0",
+    "request": "^2.82.0",
     "request-promise": "^4.2.1",
-    "superagent": "^3.5.2"
-  }
+    "superagent": "^3.8.1",
+    "snyk": "^1.258.2"
+  },
+  "snyk": true
 }
