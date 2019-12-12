@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - superagent > debug:
+        patched: '2019-12-12T05:35:39.062Z'
+  'npm:extend:20180424':
+    - request > extend:
+        patched: '2019-12-12T05:35:39.062Z'
+    - superagent > extend:
+        patched: '2019-12-12T05:35:39.062Z'
+  'npm:ms:20170412':
+    - superagent > debug > ms:
+        patched: '2019-12-12T05:35:39.062Z'
+  'npm:stringstream:20180511':
+    - request > stringstream:
+        patched: '2019-12-12T05:35:39.062Z'
+  'npm:tough-cookie:20170905':
+    - request > tough-cookie:
+        patched: '2019-12-12T05:35:39.062Z'
+    - request-promise > tough-cookie:
+        patched: '2019-12-12T05:35:39.062Z'
