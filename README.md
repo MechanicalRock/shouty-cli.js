@@ -1,3 +1,7 @@
+# Archived repository
+
+Please note, this repository has been archived and is for reference purposes only. Project dependencies may contain known security vulnerabilities.
+
 # Shouty CLI
 
 A command line interface for Shouty.
